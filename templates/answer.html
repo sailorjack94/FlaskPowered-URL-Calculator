@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --borderWidth: 7px;
+            --height: 24px;
+            --width: 12px;
+            --borderColor: #78b13f;
+        }
+    
+        body {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    
+        .check {
+            display: inline-block;
+            transform: rotate(45deg);
+            height: var(--height);
+            width: var(--width);
+            border-bottom: var(--borderWidth) solid var(--borderColor);
+            border-right: var(--borderWidth) solid var(--borderColor);
+        }
+    </style>
+
     <title>You've been calculated!</title>
 </head>
 <body>
-    <h1>Answer = {{answer}}</h1>
+    <h2>Answer = {{answer}}</h2>
+    <div class="check"></div>
     <div></div>
 </body>
 </html>
